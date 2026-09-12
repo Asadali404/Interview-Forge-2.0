@@ -15,8 +15,8 @@ import time
 import streamlit as st
 from groq import Groq
 
-DEFAULT_MODEL = "llama-3.3-70b-versatile"
-FAST_MODEL = "llama-3.1-8b-instant"
+DEFAULT_MODEL = "openai/gpt-oss-120b"
+FAST_MODEL = "openai/gpt-oss-20b"
 
 
 # --------------------------------------------------------------------------
