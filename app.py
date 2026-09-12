@@ -111,8 +111,8 @@ with st.sidebar:
     st.session_state.model = st.selectbox(
         "Groq model",
         [engine.DEFAULT_MODEL, engine.FAST_MODEL],
-        format_func=lambda m: "Llama 3.3 70B (quality)" if "70b" in m
-        else "Llama 3.1 8B (fast)",
+        format_func=lambda m: "openai/gpt-oss-120b (quality)" if "120B" in m
+        else "openai/gpt-oss-20b (fast)",
     )
     key_in_secrets = engine.get_api_key() is not None
     if not key_in_secrets:
