@@ -8,7 +8,7 @@ and a practice loop that feeds weak spots back into your prep.
 
 **Stack (100% free tier):**
 - **UI:** [Streamlit](https://streamlit.io)
-- **LLM:** [Groq](https://console.groq.com) free API (Llama 3.3 70B / Llama 3.1 8B)
+- **LLM:** [Groq](https://console.groq.com) free API (OpenAI `gpt-oss-120b` / `gpt-oss-20b`)
 - **Hosting:** [Streamlit Community Cloud](https://streamlit.io/cloud) (free)
 
 No vector database, no embeddings, no retrieval pipeline — every stage is a
@@ -98,7 +98,7 @@ plan as a Markdown file from the last stage.
 
 ## 6. Notable extras built on top of the base pipeline
 
-- **Two model tiers** (fast 8B vs. higher-quality 70B) selectable in the sidebar
+- **Two model tiers** (`gpt-oss-20b` fast vs. `gpt-oss-120b` higher-quality) selectable in the sidebar — both free on Groq
 - **PDF / DOCX / TXT** CV parsing out of the box
 - **Resumable stepper navigation** — jump back to any completed stage
 - **Automatic retry with backoff** on Groq rate limits
